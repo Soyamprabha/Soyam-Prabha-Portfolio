@@ -427,7 +427,26 @@ section {
   padding: 2rem 0;
   text-align: center;
 }
+.work-filters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.75rem;
+  margin-bottom: 2rem;
+}
 
+.work-item{
+  cursor: pointer;
+  color: var(--color-grey0);
+  padding: 0.25rem 0.75rem;
+  font-weight: 300;
+border-radius: 0.5rem;
+}
+
+.active-work{
+  background-color: var(--color-secondary);
+  color: var(--color-black);
+}
 .portfolios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -499,7 +518,7 @@ section {
   transform: scale(1);
 }
 
-.blogs {
+/* .blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
@@ -549,7 +568,7 @@ section {
   color: var(--color-grey-2);
   line-height: 2rem;
   padding-bottom: 1rem;
-}
+} */
 
 .contact-content-con {
   display: flex;
