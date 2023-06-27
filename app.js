@@ -24,7 +24,7 @@ function activeWork(){
 
 linkWork.forEach(l=> l.addEventListener("click", activeWork))
 
-var mixerPortfolio = mixitup('.portfolios', {
+let mixerPortfolio = mixitup('.portfolios', {
     selectors: {
         target: '.portfolio-item'
     },
