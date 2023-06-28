@@ -1093,4 +1093,39 @@ animation-play-state: paused;
   margin-bottom: 0.8rem;
  }
 
- 
+ .about-img-wrapper{
+  position: relative;
+ }
+
+ .about-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  transition: all .3s ease;
+ }
+
+ .about-img:nth-child(1){
+  clip-path: polygon(0 0, 0 32%, 28% 0);
+  transform: translateY(-1.25rem);
+ }
+
+ .about-img:nth-child(2){
+  clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
+  transform: translateY(-0.75rem);
+ }
+
+ .about-img:nth-child(3){
+  clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
+  transform: translateY(-0.25rem);
+ }
+
+ .about-img:nth-child(4){
+  clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
+  transform: translateY(0.25rem);
+ }
+
+ .about-img-wrapper:hover .about-img{
+transform: translateY(0);
+ }
