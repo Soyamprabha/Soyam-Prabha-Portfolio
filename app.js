@@ -11,10 +11,6 @@
             document.getElementById(button.dataset.id).classList.add("active");
         })
     });
-    // document.querySelector(".theme-btn").addEventListener("click", () => {
-    //     document.body.classList.toggle("light-mode");
-    // })
-
 
 const linkWork = document.querySelectorAll('.work-item')
 function activeWork(){
@@ -40,6 +36,8 @@ let type = new Typed ('.auto-input', {
     backDelay: 1000,
     loop: true,
 })
+
+
 
 })();
 
