@@ -16,23 +16,6 @@
   --color-grey-3: #6c7983;
   --color-grey-4: #454e56;
   --color-grey-5: #2a2e35;
-  --color-grey-6: #12181b;
-  --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
-}
-
-.light-mode {
-  --color-primary: #FFFFFF;
-  --color-secondary: #abd200;
-  --color-white: #454e56;
-  --color-black: #000;
-  --color-grey0: #f8f8f8;
-  --color-grey-1: #6c7983;
-  --color-grey-2: #6c7983;
-  --color-grey-3: #6c7983;
-  --color-grey-4: #454e56;
-  --color-grey-5: #f8f8f8;
-  --color-grey-6: #12181b;
 }
 
 body {
@@ -109,7 +92,7 @@ section {
   justify-content: center;
   align-items: center;
   margin: 0.7rem 0;
-  box-shadow: var(--box-shadow-1);
+  box-shadow: 0 3px 15px rgba(0,0,0,.3);
 }
 .controls .control i {
   font-size: 1.2rem;
@@ -147,7 +130,7 @@ section {
   clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
 }
 .header-content .left-header .image {
-  border-radius: var(--br-sm-2);
+  border-radius: 14px;
   height: 90%;
   width: 68%;
   margin-left: 4rem;
@@ -223,7 +206,7 @@ section {
   font-weight: 300;
   margin-bottom: 10px;
 }
-/*About*/
+
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -287,29 +270,6 @@ transform: translateY(0);
   text-transform: uppercase;
 }
 
-.skills {
-  padding-bottom: 4rem;
-}
-
-.stat-title {
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  text-align: center;
-  padding: 3.5rem 0;
-  position: relative;
-}
-.stat-title::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 40%;
-  height: 1px;
-  background-color: var(--color-grey-5);
-  transform: translateX(-50%);
-}
-
-/*Timeline*/
 .timeline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -940,10 +900,6 @@ border-radius: 0.5rem;
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
-
-
-
 .sub-para{
   margin-top: 25px;
   margin-bottom: 25px;
@@ -965,6 +921,28 @@ border-radius: 0.5rem;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.873rem;
  }
+
+ .skills {
+  padding-bottom: 4rem;
+}
+
+.stat-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 3.5rem 0;
+  position: relative;
+}
+.stat-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 40%;
+  height: 1px;
+  background-color: var(--color-grey-5);
+  transform: translateX(-50%);
+}
 
 
  .services-item{
@@ -1115,15 +1093,6 @@ color: var(--color-secondary);
 .t-bq-wrapper.t-bq-wrapper-fullwidth {
   max-width: 100%;
 }
-
-
-
-
-
-
-
-
-/* ========== 05. spotwrite ========== */
 
 .t-bq-quote-scratchbook {
   position: relative;

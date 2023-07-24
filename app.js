@@ -37,7 +37,5 @@ let type = new Typed ('.auto-input', {
     loop: true,
 })
 
-
-
 })();
 
